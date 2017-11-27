@@ -1,0 +1,15 @@
+/* 
+  infoPlist.strings
+  LocalizationExample
+
+  Created by scfhao on 2017/11/27.
+  Copyright © 2017年 scfhao. All rights reserved.
+*/
+"label" = "标签";
+"button" = "按钮";
+"textField placeholder" = "输入框提示";
+"textView" = "文本区";
+"cell label" = "行上标签";
+"title" = "标题";
+"Setting" = "设置";
+"Language setting" = "语言设置";

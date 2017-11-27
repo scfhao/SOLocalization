@@ -13,6 +13,17 @@
 		D93EF5AB1FCBAD0700F65AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93EF5AA1FCBAD0700F65AB3 /* Assets.xcassets */; };
 		D93EF5AE1FCBAD0700F65AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93EF5AC1FCBAD0700F65AB3 /* LaunchScreen.storyboard */; };
 		D93EF5B11FCBAD0700F65AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5B01FCBAD0700F65AB3 /* main.m */; };
+		D93EF5B91FCBAFFB00F65AB3 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D93EF5BB1FCBAFFB00F65AB3 /* infoPlist.strings */; };
+		D93EF5C01FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5BF1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m */; };
+		D93EF5C31FCBB2ED00F65AB3 /* SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5C21FCBB2ED00F65AB3 /* SOLocalization.m */; };
+		D93EF5C71FCBBA6A00F65AB3 /* UILabel+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5C61FCBBA6A00F65AB3 /* UILabel+SOLocalization.m */; };
+		D93EF5CA1FCBBA8400F65AB3 /* UIButton+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5C91FCBBA8400F65AB3 /* UIButton+SOLocalization.m */; };
+		D93EF5CD1FCBC22900F65AB3 /* UIView+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5CC1FCBC22900F65AB3 /* UIView+SOLocalization.m */; };
+		D93EF5D01FCBDB8400F65AB3 /* UITextField+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5CF1FCBDB8400F65AB3 /* UITextField+SOLocalization.m */; };
+		D93EF5D31FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5D21FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.m */; };
+		D93EF5D61FCBE18D00F65AB3 /* UIBarItem+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5D51FCBE18D00F65AB3 /* UIBarItem+SOLocalization.m */; };
+		D93EF5D91FCBE4E100F65AB3 /* SOSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5D81FCBE4E100F65AB3 /* SOSwizzle.m */; };
+		D93EF5DC1FCBE76F00F65AB3 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5DB1FCBE76F00F65AB3 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,28 @@
 		D93EF5AD1FCBAD0700F65AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93EF5AF1FCBAD0700F65AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93EF5B01FCBAD0700F65AB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D93EF5BA1FCBAFFB00F65AB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
+		D93EF5BC1FCBB02000F65AB3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
+		D93EF5BE1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SOLocalizations.h"; sourceTree = "<group>"; };
+		D93EF5BF1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SOLocalizations.m"; sourceTree = "<group>"; };
+		D93EF5C11FCBB2ED00F65AB3 /* SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOLocalization.h; sourceTree = "<group>"; };
+		D93EF5C21FCBB2ED00F65AB3 /* SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOLocalization.m; sourceTree = "<group>"; };
+		D93EF5C51FCBBA6A00F65AB3 /* UILabel+SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+SOLocalization.h"; sourceTree = "<group>"; };
+		D93EF5C61FCBBA6A00F65AB3 /* UILabel+SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SOLocalization.m"; sourceTree = "<group>"; };
+		D93EF5C81FCBBA8400F65AB3 /* UIButton+SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SOLocalization.h"; sourceTree = "<group>"; };
+		D93EF5C91FCBBA8400F65AB3 /* UIButton+SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SOLocalization.m"; sourceTree = "<group>"; };
+		D93EF5CB1FCBC22900F65AB3 /* UIView+SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SOLocalization.h"; sourceTree = "<group>"; };
+		D93EF5CC1FCBC22900F65AB3 /* UIView+SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOLocalization.m"; sourceTree = "<group>"; };
+		D93EF5CE1FCBDB8400F65AB3 /* UITextField+SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+SOLocalization.h"; sourceTree = "<group>"; };
+		D93EF5CF1FCBDB8400F65AB3 /* UITextField+SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SOLocalization.m"; sourceTree = "<group>"; };
+		D93EF5D11FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+SOLocalization.h"; sourceTree = "<group>"; };
+		D93EF5D21FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+SOLocalization.m"; sourceTree = "<group>"; };
+		D93EF5D41FCBE18D00F65AB3 /* UIBarItem+SOLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarItem+SOLocalization.h"; sourceTree = "<group>"; };
+		D93EF5D51FCBE18D00F65AB3 /* UIBarItem+SOLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarItem+SOLocalization.m"; sourceTree = "<group>"; };
+		D93EF5D71FCBE4E100F65AB3 /* SOSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOSwizzle.h; sourceTree = "<group>"; };
+		D93EF5D81FCBE4E100F65AB3 /* SOSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOSwizzle.m; sourceTree = "<group>"; };
+		D93EF5DA1FCBE76F00F65AB3 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		D93EF5DB1FCBE76F00F65AB3 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +75,7 @@
 		D93EF5951FCBAD0700F65AB3 = {
 			isa = PBXGroup;
 			children = (
+				D93EF5BD1FCBB25F00F65AB3 /* SOLocalizations */,
 				D93EF5A01FCBAD0700F65AB3 /* LocalizationExample */,
 				D93EF59F1FCBAD0700F65AB3 /* Products */,
 			);
@@ -62,13 +96,49 @@
 				D93EF5A21FCBAD0700F65AB3 /* AppDelegate.m */,
 				D93EF5A41FCBAD0700F65AB3 /* ViewController.h */,
 				D93EF5A51FCBAD0700F65AB3 /* ViewController.m */,
+				D93EF5DA1FCBE76F00F65AB3 /* SettingViewController.h */,
+				D93EF5DB1FCBE76F00F65AB3 /* SettingViewController.m */,
 				D93EF5A71FCBAD0700F65AB3 /* Main.storyboard */,
 				D93EF5AA1FCBAD0700F65AB3 /* Assets.xcassets */,
 				D93EF5AC1FCBAD0700F65AB3 /* LaunchScreen.storyboard */,
 				D93EF5AF1FCBAD0700F65AB3 /* Info.plist */,
 				D93EF5B01FCBAD0700F65AB3 /* main.m */,
+				D93EF5BB1FCBAFFB00F65AB3 /* infoPlist.strings */,
 			);
 			path = LocalizationExample;
+			sourceTree = "<group>";
+		};
+		D93EF5BD1FCBB25F00F65AB3 /* SOLocalizations */ = {
+			isa = PBXGroup;
+			children = (
+				D93EF5C41FCBB8DE00F65AB3 /* UIKit */,
+				D93EF5C11FCBB2ED00F65AB3 /* SOLocalization.h */,
+				D93EF5C21FCBB2ED00F65AB3 /* SOLocalization.m */,
+			);
+			path = SOLocalizations;
+			sourceTree = "<group>";
+		};
+		D93EF5C41FCBB8DE00F65AB3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D93EF5BE1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.h */,
+				D93EF5BF1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m */,
+				D93EF5CB1FCBC22900F65AB3 /* UIView+SOLocalization.h */,
+				D93EF5CC1FCBC22900F65AB3 /* UIView+SOLocalization.m */,
+				D93EF5C51FCBBA6A00F65AB3 /* UILabel+SOLocalization.h */,
+				D93EF5C61FCBBA6A00F65AB3 /* UILabel+SOLocalization.m */,
+				D93EF5C81FCBBA8400F65AB3 /* UIButton+SOLocalization.h */,
+				D93EF5C91FCBBA8400F65AB3 /* UIButton+SOLocalization.m */,
+				D93EF5CE1FCBDB8400F65AB3 /* UITextField+SOLocalization.h */,
+				D93EF5CF1FCBDB8400F65AB3 /* UITextField+SOLocalization.m */,
+				D93EF5D11FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.h */,
+				D93EF5D21FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.m */,
+				D93EF5D41FCBE18D00F65AB3 /* UIBarItem+SOLocalization.h */,
+				D93EF5D51FCBE18D00F65AB3 /* UIBarItem+SOLocalization.m */,
+				D93EF5D71FCBE4E100F65AB3 /* SOSwizzle.h */,
+				D93EF5D81FCBE4E100F65AB3 /* SOSwizzle.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +183,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D93EF5951FCBAD0700F65AB3;
 			productRefGroup = D93EF59F1FCBAD0700F65AB3 /* Products */;
@@ -130,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93EF5AE1FCBAD0700F65AB3 /* LaunchScreen.storyboard in Resources */,
+				D93EF5B91FCBAFFB00F65AB3 /* infoPlist.strings in Resources */,
 				D93EF5AB1FCBAD0700F65AB3 /* Assets.xcassets in Resources */,
 				D93EF5A91FCBAD0700F65AB3 /* Main.storyboard in Resources */,
 			);
@@ -143,8 +215,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93EF5A61FCBAD0700F65AB3 /* ViewController.m in Sources */,
+				D93EF5CD1FCBC22900F65AB3 /* UIView+SOLocalization.m in Sources */,
+				D93EF5DC1FCBE76F00F65AB3 /* SettingViewController.m in Sources */,
+				D93EF5C71FCBBA6A00F65AB3 /* UILabel+SOLocalization.m in Sources */,
+				D93EF5CA1FCBBA8400F65AB3 /* UIButton+SOLocalization.m in Sources */,
+				D93EF5D91FCBE4E100F65AB3 /* SOSwizzle.m in Sources */,
 				D93EF5B11FCBAD0700F65AB3 /* main.m in Sources */,
+				D93EF5C31FCBB2ED00F65AB3 /* SOLocalization.m in Sources */,
 				D93EF5A31FCBAD0700F65AB3 /* AppDelegate.m in Sources */,
+				D93EF5C01FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m in Sources */,
+				D93EF5D01FCBDB8400F65AB3 /* UITextField+SOLocalization.m in Sources */,
+				D93EF5D61FCBE18D00F65AB3 /* UIBarItem+SOLocalization.m in Sources */,
+				D93EF5D31FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +249,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		D93EF5BB1FCBAFFB00F65AB3 /* infoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93EF5BA1FCBAFFB00F65AB3 /* en */,
+				D93EF5BC1FCBB02000F65AB3 /* zh-Hans */,
+			);
+			name = infoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -174,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -229,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
