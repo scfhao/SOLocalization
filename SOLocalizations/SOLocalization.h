@@ -15,6 +15,9 @@
 #import "UINavigationItem+SOLocalization.h"
 #import "UIBarItem+SOLocalization.h"
 
+#define SOLocalizedStringFromTable(key, tbl) \
+[[SOLocalization sharedLocalization] localizedStringForKey:(key) inTable:(tbl)]
+
 @interface SOLocalization : NSObject
 
 @property (copy, nonatomic) NSString *region;

@@ -66,6 +66,7 @@ NSString * const SOLocalizationTraditionalChinese = @"zh-Hant";
 }
 
 - (NSString *)localizedStringForKey:(NSString *)key inTable:(NSString *)table {
+    NSLocalizedStringFromTable(<#key#>, <#tbl#>, <#comment#>)
     return [[self bundle] localizedStringForKey:key value:@"" table:table ?: @"infoPlist"];
 }
 
