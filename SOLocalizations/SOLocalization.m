@@ -49,6 +49,7 @@ NSString * const SOLocalizationTraditionalChinese = @"zh-Hant";
 }
 
 - (void)setRegion:(NSString *)region {
+    if ([_region isEqualToString:region]) return;
     _region = [region copy];
     [[NSUserDefaults standardUserDefaults]setObject:region forKey:SOLocalizationRegionKey];
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
@@ -66,7 +67,6 @@ NSString * const SOLocalizationTraditionalChinese = @"zh-Hant";
 }
 
 - (NSString *)localizedStringForKey:(NSString *)key inTable:(NSString *)table {
-    NSLocalizedStringFromTable(<#key#>, <#tbl#>, <#comment#>)
     return [[self bundle] localizedStringForKey:key value:@"" table:table ?: @"infoPlist"];
 }
 

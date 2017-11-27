@@ -374,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5N5785R8FU;
 				INFOPLIST_FILE = LocalizationExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.scfhao.LocalizationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5N5785R8FU;
 				INFOPLIST_FILE = LocalizationExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.scfhao.LocalizationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
