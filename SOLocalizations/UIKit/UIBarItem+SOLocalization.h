@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+SOLocalization.h"
+#import "SOLocalizationElement.h"
 
 @interface UIBarItem (SOLocalization)<SOLocalizationElement>
 

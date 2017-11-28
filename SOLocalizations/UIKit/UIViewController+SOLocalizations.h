@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+SOLocalization.h"
+#import "SOLocalizationElement.h"
 
 @interface UIViewController (SOLocalizations)<SOLocalizationElement>
-
-@property (copy, nonatomic) NSString *sol_title;
-@property (copy, nonatomic) NSString *sol_table;
 
 @end

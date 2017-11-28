@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@protocol SOLocalizationElement
-
-@optional
-- (void)sol_updateLocalization;
-
-@end
+#import "SOLocalizationElement.h"
 
 @interface UIView (SOLocalization)<SOLocalizationElement>
 

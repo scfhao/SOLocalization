@@ -30,12 +30,16 @@
 - (void)sol_setTitle:(NSString *)title forState:(UIControlState)state {
     self.sol_titleDictionary[@(state)] = title;
     [self sol_updateLocalization];
+    
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 - (NSString *)titleForState:(UIControlState)state {
     NSString *solTitle = self.sol_titleDictionary[@(state)];
     return [[SOLocalization sharedLocalization]localizedStringForKey:solTitle inTable:self.sol_table];
 }
+#pragma clang diagnostic pop
 
 - (void)sol_updateLocalization {
     NSString *title = [self titleForState:self.state];

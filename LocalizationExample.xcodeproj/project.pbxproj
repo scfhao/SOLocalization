@@ -59,6 +59,7 @@
 		D93EF5D81FCBE4E100F65AB3 /* SOSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOSwizzle.m; sourceTree = "<group>"; };
 		D93EF5DA1FCBE76F00F65AB3 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		D93EF5DB1FCBE76F00F65AB3 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		D969D15C1FCCED5D00CA8597 /* SOLocalizationElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOLocalizationElement.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 		D93EF5C41FCBB8DE00F65AB3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D969D15C1FCCED5D00CA8597 /* SOLocalizationElement.h */,
 				D93EF5BE1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.h */,
 				D93EF5BF1FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m */,
 				D93EF5CB1FCBC22900F65AB3 /* UIView+SOLocalization.h */,
