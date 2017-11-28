@@ -17,31 +17,56 @@ NSString * const SOLocalizationTraditionalChinese = @"zh-Hant";
 
 @implementation SOLocalization
 
+static SOLocalization *localization = nil;
+
++ (void)configSupportRegions:(NSArray *)supportRegions fallbackRegion:(NSString *)fallbackRegion {
+    if (!localization) {
+        @synchronized(self) {
+            if (!localization) {
+                localization = [[SOLocalization alloc]initWithSupportRegions:supportRegions fallbackRegion:fallbackRegion];
+            }
+        }
+    } else {
+        NSLog(@"[SOLocalization]: 请在程序入口处调用%@", NSStringFromSelector(_cmd));
+    }
+}
+
 + (instancetype)sharedLocalization {
-    static SOLocalization *localization = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        localization = [SOLocalization new];
-    });
+    if (!localization) {
+        @synchronized(self) {
+            if (!localization) {
+                localization = [[SOLocalization alloc]initWithSupportRegions:nil fallbackRegion:nil];
+            }
+        }
+    }
     return localization;
 }
 
-- (instancetype)init {
+- (instancetype)initWithSupportRegions:(NSArray *)supportRegions fallbackRegion:(NSString *)fallbackRegion {
     self = [super init];
     if (self) {
         NSString *region = [[NSUserDefaults standardUserDefaults]objectForKey:SOLocalizationRegionKey];
         if (region) {
             _region = region;
         } else {
+            if (![supportRegions count]) {
+                supportRegions = @[SOLocalizationEnglish, SOLocalizationSimplifiedChinese, SOLocalizationTraditionalChinese];
+            }
+            if (!fallbackRegion) {
+                fallbackRegion = SOLocalizationEnglish;
+            }
             NSArray *languageArray = [[NSUserDefaults standardUserDefaults]objectForKey:SODeviceLocalizationRegionKey];
             if ([languageArray count]) {
                 NSString *preferrdLanguage = languageArray[0];
-                for (NSString *language in @[SOLocalizationEnglish, SOLocalizationSimplifiedChinese, SOLocalizationTraditionalChinese]) {
+                for (NSString *language in supportRegions) {
                     if ([preferrdLanguage hasPrefix:language]) {
                         _region = language;
                         break;
                     }
                 }
+            }
+            if (!_region) {
+                _region = fallbackRegion;
             }
         }
     }
