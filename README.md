@@ -4,6 +4,12 @@ Configure multi-language environment in iOS application.
 
 在 iOS 应用中切换使用的语言。
 
+## Feature
+
+* [x] 切换语言后不需要界面跳转。
+* [x] 默认使用当前系统设置的语言。
+* [x] 使用简单、扩展方便、速度很快。
+
 ## Usage
 
 ### Export SOLocalization

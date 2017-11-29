@@ -20,7 +20,10 @@
 
 @interface SOLocalization : NSObject
 
-/// 语言，使用本地化文件夹的名称，比如英文的本地化文件夹叫 en.lproj，这里就用 en 代表英文，为了方便使用，本文件底部定义了 英文、简体中文、繁体中文 三个常量，可直接使用
+/**
+ 当前使用的语言
+ 使用本地化文件夹的名称，比如英文的本地化文件夹叫 en.lproj，这里就用 en 代表英文，为了方便使用，本文件底部定义了 英文、简体中文、繁体中文 三个常量，可直接使用
+ */
 @property (copy, nonatomic) NSString *region;
 
 /**

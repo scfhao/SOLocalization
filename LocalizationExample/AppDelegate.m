@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SOLocalization.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // set up support language and default language
+    // 设置支持的语言及默认语言，如果用户设备系统中设置的语言属于支持的语言，则默认使用该语言，否则使用这里设置的默认语言。
+    [SOLocalization configSupportRegions:@[SOLocalizationEnglish, SOLocalizationSimplifiedChinese] fallbackRegion:SOLocalizationEnglish];
     return YES;
 }
 

@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // 通过下面的方式设置的文本，在语言切换时可以自动更新内容
     UIBarButtonItem *change = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(changeLanguage:)];
     change.sol_title = @"Setting";
     self.navigationItem.rightBarButtonItem = change;
