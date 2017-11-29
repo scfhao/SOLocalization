@@ -24,6 +24,16 @@ Create Strings file for your project, The default strings file is named infoPlis
 
 创建本地化字符串文件，默认为 infoPlist.strings，设置好需要本地化的内容。
 
+### Configure
+
+Configure support language and fallback language。
+
+设置应用中支持的语言及默认语言(建议在AppDelegate中设置)。
+
+```
+[SOLocalization configSupportRegions:@[SOLocalizationEnglish, SOLocalizationSimplifiedChinese] fallbackRegion:SOLocalizationEnglish];
+```
+
 ### Set Localized String
 
 Set property for supported UIKit element
