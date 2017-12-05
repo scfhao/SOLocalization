@@ -29,14 +29,20 @@
     
     self.label.sol_text = @"label";
     [self.button sol_setTitle:@"button" forState:UIControlStateNormal];
+    //    [self.button setTitle:@"按钮" forState:UIControlStateNormal]; Fix #1
     
     self.textField.sol_placeholder = @"textField placeholder";
     
     self.navigationItem.sol_title = @"title";
+    self.navigationItem.backBarButtonItem.sol_title = @"title";
 }
 
 - (void)changeLanguage:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"push" sender:sender];
+}
+
+- (IBAction)buttonAction:(UIButton *)sender {
+    [sender sol_setTitle:@"pressed" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {

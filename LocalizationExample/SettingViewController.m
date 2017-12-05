@@ -19,11 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.sol_title = @"Language setting";
-    if ([[SOLocalization sharedLocalization].region isEqualToString:SOLocalizationEnglish]) {
-        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
-    } else {
-        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
-    }
 }
 
 - (void)didReceiveMemoryWarning {
