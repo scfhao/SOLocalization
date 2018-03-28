@@ -28,16 +28,12 @@
     self.navigationItem.rightBarButtonItem = change;
     
     self.label.sol_text = @"label";
-//    [self.button sol_setTitle:@"button" forState:UIControlStateNormal];
-    UILabel *label = [[UILabel alloc]initWithFrame:self.button.bounds];
-    label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    label.sol_text = @"label";
-    [self.button addSubview:label];
+    [self.button sol_setTitle:@"button" forState:UIControlStateNormal];
     
     self.textField.sol_placeholder = @"textField placeholder";
     
     self.navigationItem.sol_title = @"title";
-    self.navigationItem.backBarButtonItem.sol_title = @"title";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 - (void)changeLanguage:(UIBarButtonItem *)sender {
