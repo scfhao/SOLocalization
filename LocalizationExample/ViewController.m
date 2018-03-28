@@ -28,8 +28,11 @@
     self.navigationItem.rightBarButtonItem = change;
     
     self.label.sol_text = @"label";
-    [self.button sol_setTitle:@"button" forState:UIControlStateNormal];
-    //    [self.button setTitle:@"按钮" forState:UIControlStateNormal]; Fix #1
+//    [self.button sol_setTitle:@"button" forState:UIControlStateNormal];
+    UILabel *label = [[UILabel alloc]initWithFrame:self.button.bounds];
+    label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    label.sol_text = @"label";
+    [self.button addSubview:label];
     
     self.textField.sol_placeholder = @"textField placeholder";
     

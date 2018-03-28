@@ -51,6 +51,7 @@
 }
 
 - (void)sol_updateLocalization {
+    [super sol_updateLocalization];
     NSString *sol_title = self.sol_titleDictionary[@(self.state)];
     if (sol_title) {
         NSString *localizedTitle = [[SOLocalization sharedLocalization]localizedStringForKey:sol_title inTable:self.sol_table];
