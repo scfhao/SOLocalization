@@ -18,6 +18,8 @@
 #define SOLocalizedStringFromTable(key, tbl) \
 [[SOLocalization sharedLocalization] localizedStringForKey:(key) inTable:(tbl)]
 
+#define SOLocalizedString(key, comment) SOLocalizedStringFromTable(key, nil)
+
 @interface SOLocalization : NSObject
 
 /**

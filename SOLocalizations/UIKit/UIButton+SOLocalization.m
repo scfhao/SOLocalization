@@ -22,7 +22,7 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SOSwizzleMethod([self class], @selector(titleForState:), [self class], @selector(sol_titleForState:));
+        SOSwizzleInstanceMethod([self class], @selector(titleForState:), @selector(sol_titleForState:));
     });
 }
 

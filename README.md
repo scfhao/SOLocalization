@@ -9,6 +9,8 @@ Configure multi-language environment in iOS application.
 * [x] 切换语言后不需要界面跳转。
 * [x] 默认使用当前系统设置的语言。
 * [x] 使用简单、扩展方便、速度很快。
+* [x] UILabel、UITextField 增加对 AttributedText 的支持。
+* [x] 第三方增加对 MJRefresh 的支持。
 
 ## Usage
 
@@ -63,7 +65,7 @@ self.title = SOLocalizedStringFromTable(@"title", @"infoPlist");
 
 ### Setting application Language
 
-切换应用中的语言
+切换应用中的语言，已增加对第三方 MJRefresh 的支持，切换语言后，MJRefresh 中的语言也会跟随 SOLocalization 的设置显示，理论上其他第三方也可支持。
 
 ```
 // to use English

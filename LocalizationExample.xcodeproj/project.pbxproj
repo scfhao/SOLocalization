@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FE37CCE22A0D166006BC094 /* NSBundle+SOLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE37CCD22A0D166006BC094 /* NSBundle+SOLocalization.m */; };
 		D93EF5A31FCBAD0700F65AB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5A21FCBAD0700F65AB3 /* AppDelegate.m */; };
 		D93EF5A61FCBAD0700F65AB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EF5A51FCBAD0700F65AB3 /* ViewController.m */; };
 		D93EF5A91FCBAD0700F65AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93EF5A71FCBAD0700F65AB3 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FE37CCC22A0D166006BC094 /* NSBundle+SOLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SOLocalization.h"; sourceTree = "<group>"; };
+		5FE37CCD22A0D166006BC094 /* NSBundle+SOLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SOLocalization.m"; sourceTree = "<group>"; };
 		D93EF59E1FCBAD0700F65AB3 /* LocalizationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93EF5A11FCBAD0700F65AB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D93EF5A21FCBAD0700F65AB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FE37CCB22A0D166006BC094 /* 3rdPart */ = {
+			isa = PBXGroup;
+			children = (
+				5FE37CCC22A0D166006BC094 /* NSBundle+SOLocalization.h */,
+				5FE37CCD22A0D166006BC094 /* NSBundle+SOLocalization.m */,
+			);
+			path = 3rdPart;
+			sourceTree = "<group>";
+		};
 		D93EF5951FCBAD0700F65AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		D93EF5BD1FCBB25F00F65AB3 /* SOLocalizations */ = {
 			isa = PBXGroup;
 			children = (
+				5FE37CCB22A0D166006BC094 /* 3rdPart */,
 				D93EF5C41FCBB8DE00F65AB3 /* UIKit */,
 				D93EF5C11FCBB2ED00F65AB3 /* SOLocalization.h */,
 				D93EF5C21FCBB2ED00F65AB3 /* SOLocalization.m */,
@@ -227,6 +240,7 @@
 				D93EF5A31FCBAD0700F65AB3 /* AppDelegate.m in Sources */,
 				D93EF5C01FCBB2AE00F65AB3 /* UIViewController+SOLocalizations.m in Sources */,
 				D93EF5D01FCBDB8400F65AB3 /* UITextField+SOLocalization.m in Sources */,
+				5FE37CCE22A0D166006BC094 /* NSBundle+SOLocalization.m in Sources */,
 				D93EF5D61FCBE18D00F65AB3 /* UIBarItem+SOLocalization.m in Sources */,
 				D93EF5D31FCBE0D100F65AB3 /* UINavigationItem+SOLocalization.m in Sources */,
 			);

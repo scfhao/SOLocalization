@@ -92,7 +92,7 @@ static SOLocalization *localization = nil;
 }
 
 - (NSString *)localizedStringForKey:(NSString *)key inTable:(NSString *)table {
-    return [[self bundle] localizedStringForKey:key value:@"" table:table ?: @"infoPlist"];
+    return [[self bundle] localizedStringForKey:key value:@"" table:table ?: @"Localizable"];
 }
 
 @end

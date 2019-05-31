@@ -12,5 +12,10 @@
 @interface UILabel (SOLocalization)
 
 @property (copy, nonatomic) NSString *sol_text;
-
+/// 文本属性
+@property (copy, nonatomic) NSDictionary *sol_textAttribute;
+    
+/// 设置属性文本
+- (void)setSol_AttributedText:(NSString *)text attribute:(NSDictionary *)attribute;
+    
 @end

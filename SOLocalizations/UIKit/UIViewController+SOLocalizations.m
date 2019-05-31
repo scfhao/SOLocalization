@@ -18,7 +18,7 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SOSwizzleMethod([self class], @selector(viewWillAppear:), [self class], @selector(sol_viewWillAppear:));
+        SOSwizzleInstanceMethod([self class], @selector(viewWillAppear:), @selector(sol_viewWillAppear:));
     });
 }
 
