@@ -25,11 +25,8 @@
     
 + (NSString *)sol_localizedStringForKey:(NSString *)key value:(NSString *)value
 {
-    static NSBundle *bundle = nil;
-    if (bundle == nil) {
-        // 从MJRefresh.bundle中查找资源
-        bundle = [NSBundle bundleWithPath:[[NSBundle mj_refreshBundle] pathForResource:[SOLocalization sharedLocalization].region ofType:@"lproj"]];
-    }
+    // 根据当前设置的语言获取对应的MJBundle
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mj_refreshBundle] pathForResource:[SOLocalization sharedLocalization].region ofType:@"lproj"]];
     value = [bundle localizedStringForKey:key value:value table:nil];
     return [[NSBundle mainBundle] localizedStringForKey:key value:value table:nil];
 }

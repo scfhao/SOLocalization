@@ -52,10 +52,13 @@
 
 - (void)sol_updateLocalization {
     [super sol_updateLocalization];
-    NSString *sol_title = self.sol_titleDictionary[@(self.state)];
-    if (sol_title) {
-        NSString *localizedTitle = [[SOLocalization sharedLocalization]localizedStringForKey:sol_title inTable:self.sol_table];
-        [self setTitle:localizedTitle forState:self.state];
+    if ([self.sol_titleDictionary count]) {
+        NSArray *stateArray = [self.sol_titleDictionary allKeys];
+        for (NSNumber *stateNum in stateArray) {
+            NSString *sol_title = self.sol_titleDictionary[stateNum];
+            NSString *localizedTitle = [[SOLocalization sharedLocalization]localizedStringForKey:sol_title inTable:self.sol_table];
+            [self setTitle:localizedTitle forState:[stateNum integerValue]];
+        }
     }
 }
 
