@@ -91,6 +91,10 @@ static SOLocalization *localization = nil;
     }
 }
 
+- (NSLocale *)currentLocale {
+    return [NSLocale localeWithLocaleIdentifier:self.region];
+}
+
 - (NSString *)localizedStringForKey:(NSString *)key inTable:(NSString *)table {
     return [[self bundle] localizedStringForKey:key value:@"" table:table ?: @"Localizable"];
 }
